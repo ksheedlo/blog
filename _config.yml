@@ -1,3 +1,4 @@
-name: Ken Sheedlo's Blog
+name: Ken Sheedlo
 markdown: redcarpet
 pygments: true
+plugins: ./_plugins

@@ -1,38 +1,24 @@
-/*****************************************************************************/
-/*
-/* Common
-/*
-/*****************************************************************************/
+---
+---
 
-/* Global Reset */
-* {
-  margin: 0;
-  padding: 0;
+/* Variables */
+$orange: #F89406;
+$grayLighter: #eee;
+$grayLight: #999;
+$white: #fff;
+
+/* Webfonts */
+@font-face {
+  font-family: 'League Gothic';
+
+  src: url("/assets/leaguegothic-regular-webfont.eot");
+  src: local("☺"),
+    url("/assets/leaguegothic-regular-webfont.woff"),
+    url("/assets/leaguegothic-regular-webfont.ttf"),
+    url("/assets/leaguegothic-regular-webfont.svg#league_gothicregular");
 }
 
-html, body { height: 100%; }
-
-body {
-  background-color: #FFF;
-  font: 13.34px Helvetica, Arial, sans-serif;
-  font-size: small;
-  text-align: center;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%; }
-
-h1 { margin-bottom: 1em; }
-p { margin: 1em 0; }
-
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
-
-table {
-  font-size: inherit;
-  font: 100%;
-}
+$gothicFontFamily: 'League Gothic', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 /*****************************************************************************/
 /*
@@ -54,6 +40,39 @@ ul.posts span {
   font-size: 80%;
 }
 
+.ks-topnav a {
+  color: $white;
+  font-family: $gothicFontFamily;
+  text-transform: uppercase;
+  font-size: 30px;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $orange;
+  }
+}
+
+.ks-brand {
+  margin: 0;
+}
+
+.ks-brand a {
+  color: $grayLight;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $white;
+  }
+}
+
+.nav-jump {
+  position: relative;
+  top: 20px;
+  margin: 0 8px;
+}
+
 /*****************************************************************************/
 /*
 /* Site
@@ -61,11 +80,7 @@ ul.posts span {
 /*****************************************************************************/
 
 .site {
-  font-size: 115%;
   text-align: justify;
-  width: 42em;
-  margin: 3em auto 2em;
-  line-height: 1.5em;
 }
 
 .site .header a {
@@ -75,7 +90,7 @@ ul.posts span {
 
 .site .header h1.title {
   display: inline-block;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 .site .header h1.title a {
