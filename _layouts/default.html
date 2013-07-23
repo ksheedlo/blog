@@ -6,6 +6,32 @@
     <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width">
 
+    <meta property="og:url" content="{{ page.path }}">
+    <meta property="og:site_name" content="Ken Sheedlo's blog">
+    <meta property="og:title" content="{{ page.title }}">
+
+    <meta name="twitter:site" content="@kensheedlo">
+    <meta name="twitter:site:id" content="Ken Sheedlo">
+    <meta name="twitter:creator" content="@kensheedlo">
+    <meta name="twitter:creator:id" content="Ken Sheedlo">
+
+    {% if page.description %}
+      <meta property="og:description" content="{{ page.description | truncate: 155 }}">
+      <meta property="twitter:description" content="{{ page.description | truncate: 155 }}">
+    {% elsif page.excerpt %}
+      <meta property="og:description" content="{{ page.excerpt | truncate: 155 }}">
+      <meta property="twitter:description" content="{{ page.excerpt | truncate: 155 }}">
+    {% endif %}
+
+    {% if page.meta_image %}
+      <meta property="og:image" content="{{ page.meta_image }}">
+      <meta property="twitter:image" content="{{ page.meta_image }}">
+    {% endif %}
+
+    {% for tag in page.tags %}
+      <meta property="article:tag" content="{{ tag }}">
+    {% endfor %}
+
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/syntax.css">
     <link rel="stylesheet" href="/css/main.css">
