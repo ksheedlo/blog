@@ -2,3 +2,5 @@ name: Ken Sheedlo
 markdown: redcarpet
 pygments: true
 plugins: ./_plugins
+url: http://kensheedlo.com
+

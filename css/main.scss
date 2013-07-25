@@ -34,10 +34,13 @@ ul.posts li {
   line-height: 1.75em;
 }
 
+ul.posts > li {
+  margin-bottom: 20px;
+}
+
 ul.posts span {
   color: #aaa;
   font-family: Monaco, "Courier New", monospace;
-  font-size: 80%;
 }
 
 .ks-topnav a {
@@ -81,6 +84,11 @@ ul.posts span {
 
 .site {
   text-align: justify;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 1.2*14px;
+    line-height: 1.2*20px;
+  }
 }
 
 .site .header a {
@@ -194,4 +202,13 @@ ul.posts span {
 
 .post-header {
   font-size: 1.5em;
+}
+
+.post-header span {
+  font-size: 80%;
+}
+
+.caption {
+  text-align: center;
+  text-size: 80%;
 }
