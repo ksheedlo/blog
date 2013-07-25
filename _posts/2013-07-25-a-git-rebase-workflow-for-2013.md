@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A Git Rebase Workflow for 2013"
-date:   2013-07-25 01:00:00
+date:   2013-07-25 08:00:00
 description: An example git rebase workflow along with an analysis of its benefits and some style pointers.
 meta_image: /assets/ember-merge-workflow.png
 ---
