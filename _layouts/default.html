@@ -38,6 +38,9 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/syntax.css">
     <link rel="stylesheet" href="/css/main.css">
+
+    {% include ga.html %}
+    {% comment %} Don't place anything in head below GA snippet {% endcomment %}
   </head>
   <body>
     <div class="navbar navbar-inverse navbar-static-top ks-topnav">
@@ -69,6 +72,5 @@
   {% if page.include_disqus_count %}
     {% include disqus_count.html %}
   {% endif %}
-  {% include ga.html %}
 </body>
 </html>
