@@ -49,12 +49,15 @@ components.
 #### How do I use it?
 
 You interact with MinErr when an error occurs inside Angular. In a non-minified
-build, a MinErr error will log its detailed message to the console, interpolated with any
-relevant parameters. In a minified build, it will log a link. Clicking on the
-link will send you to a web page with the interpolated error message along with
-a detailed description of the error and a Disqus thread.
+build, a MinErr error will log its detailed message to the console,
+interpolated with any relevant parameters. In a minified build, it will log a
+link. Clicking on the link will send you to a web page with the interpolated
+error message along with a detailed description of the error and a Disqus
+thread.
 
-When hacking on Angular, you should define your errors in a way that MinErr can
+#### How do I develop with it?
+
+As a contributor to Angular, you should define your errors in a way that MinErr can
 understand. Each error message is identified by a namespace and error code. The
 namespace should be chosen by the component, directive or module that the error
 occurs in, and should be as specific as possible. For instance, an error in the
