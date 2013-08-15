@@ -88,6 +88,10 @@ ul.posts span {
   @media only screen and (min-width: 768px) {
     font-size: 1.2*14px;
     line-height: 1.2*20px;
+    code {
+      font-size: 1.2*12px;
+      line-height: 1.2*20px;
+    }
   }
 }
 
