@@ -5,8 +5,8 @@ title: Ken Sheedlo | Resume
 
 ## Open Source
 
-I'm a member of the [AngularJS](http://angularjs.org) team at Google. I've also
-contributed code to several other projects. Check out my 
+I work closely with the [AngularJS](http://angularjs.org) team at Google. I've
+also contributed code to several other projects. Check out my
 [github](https://github.com/ksheedlo) for more details.
 
 ## Skills
@@ -33,14 +33,17 @@ Expected graduation date: Spring 2014
 
 #### Software Engineering Intern, Google
 
-May 2013 - present
+May 2013 - August 2013
 
-Developing facilities for stripping long error messages from minified 
-JavaScript code for AngularJS. Implemented a custom Closure Compiler runner to
-accomplish error stripping and published as angular/ng-closure-runner. Rewrote
-internal error throwing API to allow long strippable error messages. 
-Implementing error browser in docs.angularjs.org to help developers get 
-information on errors occurring in minified builds.
+Developed facilities for stripping long error messages from minified JavaScript
+code for AngularJS. Implemented a custom Closure Compiler runner to accomplish
+error stripping and published as
+[angular/ng-closure-runner](https://github.com/angular/ng-closure-runner).
+Rewrote internal error throwing API to allow long strippable error messages.
+Implemented error browser in docs.angularjs.org to help developers get
+information on errors occurring in minified builds. Reduced size of gzipped and
+minified Angular by 1 KB while improving the developer experience around error
+messages.
 
 #### Software Engineering Intern, TiVo Inc.
 
