@@ -14,7 +14,13 @@ include_disqus_count: true
       </div>
       <p>{{ post.content }}</p>
       <a href="{{ site.url }}{{ post.url }}#disqus_thread"></a>
+      <span class="social-plugins">
+        <div class="g-plusone" data-size="medium" href="http://kensheedlo.com{{ post.url }}"></div>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://kensheedlo.com{{ post.url }}">Tweet</a>
+        <div class="fb-like" data-href="http://kensheedlo.com{{ post.url }}" data-layout="button_count" data-width="450" data-show-faces="false" data-send="false"></div>
+      </span>
     </li>
+    <hr class="post-splitter">
     {% endfor %}
   </ul>
 </div>

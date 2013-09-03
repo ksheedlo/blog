@@ -43,22 +43,35 @@
     {% comment %} Don't place anything in head below GA snippet {% endcomment %}
   </head>
   <body>
+    {% include facebook.html %}
     <div class="navbar navbar-inverse navbar-static-top ks-topnav">
       <div class="navbar-inner">
-        <h2 class="brand ks-brand"><a href="/">{{ site.name }}</a></h2>
-        <a class="nav-jump" href="/about">About</a>
-        <a class="nav-jump" href="/resume">Resume</a>
-        <a class="nav-jump" href="https://github.com/ksheedlo">Github</a>
-        <a class="nav-jump" href="https://twitter.com/kensheedlo">Twitter</a>
-      </div>
-    </div>
-    <div class="container">
-      <div class="site">
-        <div class="span9">
-          {{ content }}
+        <div class="brand-header">
+          <h2 class="brand ks-brand">
+            <a href="/">
+              <span class="site-name">{{ site.name }}</span>
+              <span class="tagline">Open Web Superhero</span>
+            </a>
+          </h2>
+        </div>
+        <div class="jump-links">
+          <a href="/about">About</a>
+          <a href="/resume">Resume</a>
+          <a href="https://github.com/ksheedlo">Github</a>
+          <a href="https://twitter.com/kensheedlo">Twitter</a>
         </div>
       </div>
-    </div> <!-- /container -->
+    </div>
+    <div class="site">
+      <div class="container">
+        <div class="row">
+          <div class="span9">
+            {{ content }}
+          </div>
+          <div class="span3"></div>
+        </div>
+      </div> <!-- /container -->
+    </div>
   </div>
   <div class="site">
     <div class="footer">
@@ -72,5 +85,7 @@
   {% if page.include_disqus_count %}
     {% include disqus_count.html %}
   {% endif %}
+  {% include twitter.html %}
+  {% include plusone.html %}
 </body>
 </html>

@@ -20,6 +20,8 @@ $white: #fff;
 
 $gothicFontFamily: 'League Gothic', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
+$normalFontFamily: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+
 /*****************************************************************************/
 /*
 /* Home
@@ -43,21 +45,31 @@ ul.posts span {
   font-family: Monaco, "Courier New", monospace;
 }
 
-.ks-topnav a {
-  color: $white;
+.jump-links a,
+.ks-brand a {
   font-family: $gothicFontFamily;
   text-transform: uppercase;
   font-size: 30px;
+}
 
-  &:hover,
-  &:focus {
-    text-decoration: none;
-    color: $orange;
+.jump-links {
+  clear: both;
+  margin: 0 0 10px 20px;
+  
+  a {
+    color: $white;
+    margin: 0 8px;
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      color: $orange;
+    }
   }
 }
 
 .ks-brand {
   margin: 0;
+  display: inline;
 }
 
 .ks-brand a {
@@ -68,6 +80,13 @@ ul.posts span {
     text-decoration: none;
     color: $white;
   }
+}
+
+.ks-brand .tagline {
+  font-family: $normalFontFamily;
+  text-transform: lowercase;
+  font-size: 24px;
+  margin-left: 3px;
 }
 
 .nav-jump {
@@ -215,4 +234,19 @@ ul.posts span {
 .caption {
   text-align: center;
   text-size: 80%;
+}
+
+.post-splitter {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #eee;
+}
+
+.social-plugins {
+  position: relative;
+  top: 4px;
+  margin-left: 12px;
+
+  .social-plugins-post {
+    margin: 0;
+  }
 }
