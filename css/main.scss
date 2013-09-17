@@ -250,3 +250,99 @@ ul.posts span {
     margin: 0;
   }
 }
+
+.profile-block {
+  border-top: 2px solid #eee;
+  margin-top: 20px;
+}
+
+.profile-header {
+  margin-left: 10px;
+}
+
+.profile-picture {
+  background-image: url(/assets/splat-profile.jpg);
+  background-size: 100%;
+  width: 200px;
+  height: 200px;
+  margin-left: 10px;
+
+  @media
+  screen and (-webkit-min-device-pixel-ratio: 1.5),
+  screen and (-moz-min-device-pixel-ratio: 1.5),
+  screen and (min-device-pixel-ratio: 1.5) {
+    background-image: url(/assets/splat-profile-2x.jpg);
+  }
+  @media only screen and (min-width: 768px) and (max-width: 980px) {
+    width: 146px;
+    height: 146px;
+  }
+}
+
+.profile-blurb {
+  font-size: 13px;
+  line-height: 19px;
+  text-align: center;
+  color: #777;
+  margin-top: 6px;
+}
+
+.profile-twitter-button {
+  margin: 6px 0 0 10px;
+}
+
+.recent-posts {
+  list-style-type: none;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.recent-posts li {
+  margin-bottom: 8px;
+}
+
+.rot90 {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.tagline-hack {
+  text-transform: lowercase;    
+  text-align: left;
+  font-family: monospace;
+  position: relative;
+  top: 80px;
+  right: 53px;
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 980px) {
+    top: 52px;
+    right: 28px;
+  }
+  @media only screen and (min-width: 1200px) {
+    top: 108px;
+    right: 79px;
+  }
+}
+
+.tagline-hack h2 {
+  font-size: 50px;
+}
+
+.tagline-hack h3 {
+  font-size: 32px;
+  margin-left: 54px;
+}
+
+.tagline-hack-wrapper {
+  @media only screen and (min-width: 768px) {
+    height: 460px;
+  }
+}
