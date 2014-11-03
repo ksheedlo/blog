@@ -3,4 +3,5 @@ markdown: redcarpet
 pygments: true
 plugins: ./_plugins
 url: http://kensheedlo.com
+exclude: ['upload_to_cdn.sh']
 
