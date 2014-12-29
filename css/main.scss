@@ -7,6 +7,7 @@
 /* Variables */
 $white: #fff;
 $green: #2bad7c;
+$blue: #2893c1;
 $orange: #ff7b3f;
 $off-white: #eee;
 $gray-dark: #333;
@@ -29,18 +30,47 @@ $display-font-weight: bold;
 
 html {
   box-sizing: border-box;
+  height: 100%;
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
 a {
+  color: $blue;
   text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 body {
   background-color: $off-white;
   font-family: $sans-font-family;
+  height: 100%;
+}
+
+.u-pageWrap {
+  min-height: 100%;
+  margin-bottom: -100px;
+
+  &:after {
+    height: 100px;
+  }
+}
+
+.u-positionScope {
+  position: relative;
+}
+
+footer {
+  height: 100px;
+  background-color: $gray-dark;
+  color: $off-white;
+  padding: 10px;
+  text-align: center;
+  font-size: 80%;
 }
 
 .cf {
@@ -79,17 +109,14 @@ ul.posts span {
   font-family: Monaco, "Courier New", monospace;
 }
 
-.footer .twitter-follow-button {
-  margin-top: 10px;
-  margin-left: 38%;
-  margin-left: -webkit-calc(50% - 82px);
-  margin-left: -moz-calc(50% - 82px);
-  margin-left: calc(50% - 82px);
+.Footer-followButton {
+  position: absolute;
+  left: 50%;
+  margin: 0 0 0 -82px;
 }
 
-.footer .disclaimer {
-  margin: 0 2em;
-  text-align: center;
+.Footer-disclaimer {
+  margin-top: 40px;
 }
 
 /*****************************************************************************/
@@ -160,12 +187,8 @@ ul.posts span {
 
 .hidebelow-lg {
   @media screen and (max-width: 64em) {
-    display: none;
+    display: none !important;
   }
-}
-
-.f-left {
-  float: left;
 }
 
 .TopNav {
@@ -195,6 +218,7 @@ ul.posts span {
   &:hover {
     color: $gray-dark;
     background-color: $off-white;
+    text-decoration: none;
   }
 }
 
@@ -227,8 +251,8 @@ ul.posts span {
 }
 
 .Site-container {
-  margin: 0 auto;
-  max-width: 1200px;
+  @include outer-container(1200px);
+
   font-family: $sans-font-family;
 
   @media screen and (max-width: 64em) {
@@ -236,8 +260,32 @@ ul.posts span {
   }
 }
 
+.Site-row {
+  @include row();
+}
+
 .Site-column {
   padding: 1em;
+}
+
+.Site-column--lg2of3 {
+  @include media(max-width 64em) {
+    @include span-columns(12);
+  }
+
+  @include media(min-width 64em) {
+    @include span-columns(8);
+  }
+}
+
+.Site-column--lg1of3 {
+  @include media(max-width 64em) {
+    @include span-columns(12);
+  }
+
+  @include media(min-width 64em) {
+    @include span-columns(4);
+  }
 }
 
 .profile-block {
@@ -280,12 +328,18 @@ ul.posts span {
   margin: 6px 0 0 10px;
 }
 
+.SideContent-block {
+  border-top: 2px solid darken(#eee, 10%);
+  margin-top: 20px;
+}
+
 .SideContent-recentPosts {
   list-style-type: none;
   font-size: 14px;
   line-height: 20px;
   text-align: left;
   margin-left: 20px;
+  padding: 0;
 }
 
 .SideContent-recentPost {
