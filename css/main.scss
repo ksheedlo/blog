@@ -371,3 +371,11 @@ ul.posts span {
 .SideContent-recentPost {
   margin-bottom: 8px;
 }
+
+.SideContent-profileImage {
+  width: 130px;
+  padding: 5px;
+  shape-outside: circle(50%);
+  shape-margin: 1em;
+  float: left;
+}
