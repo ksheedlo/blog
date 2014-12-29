@@ -1,7 +1,10 @@
 name: Ken Sheedlo
 markdown: redcarpet
-pygments: true
+highlighter: 'pygments'
 plugins: ./_plugins
 url: http://kensheedlo.com
 exclude: ['upload_to_cdn.sh']
-
+gems:
+    - octopress-autoprefixer
+    - bourbon
+    - neat

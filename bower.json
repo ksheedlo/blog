@@ -1,0 +1,22 @@
+{
+  "name": "blog",
+  "version": "0.0.0",
+  "homepage": "http://kensheedlo.com",
+  "authors": [
+    "Ken Sheedlo <ken.sheedlo@rackspace.com>"
+  ],
+  "description": "Ken Sheedlo's blog",
+  "main": "index.html",
+  "license": "All Rights Reserved",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize": "necolas/normalize.css#v3.0.2"
+  }
+}

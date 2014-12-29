@@ -1,0 +1,2 @@
+--ignore-dir=_site/
+--ignore-dir=bower_components/
