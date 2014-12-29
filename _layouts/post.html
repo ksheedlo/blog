@@ -2,15 +2,21 @@
 layout: default
 ---
 <h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
 
 <div class="post">
 {{ content }}
 </div>
-<span class="social-plugins social-plugins-post">
-  <div class="g-plusone" data-size="medium" href="http://kensheedlo.com{{ page.url }}"></div>
-  <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://kensheedlo.com{{ page.url }}">Tweet</a>
-  <div class="fb-like" data-href="http://kensheedlo.com{{ page.url }}" data-layout="button_count" data-width="450" data-show-faces="false" data-send="false"></div>
+<span class="SocialPlugins SocialPlugins--post">
+  <div class="g-plusone" data-size="medium"
+    href="http://kensheedlo.com{{ page.url }}"></div>
+  <a href="https://twitter.com/share"
+    class="SocialPlugins-twitter twitter-share-button"
+    data-url="http://kensheedlo.com{{ page.url }}">Tweet</a>
+  <div class="SocialPlugins-fb SocialPlugins-fb--post fb-like"
+    data-href="http://kensheedlo.com{{ page.url }}"
+    data-layout="button_count"
+    data-width="450"
+    data-show-faces="false" data-send="false"></div>
 </span>
 <hr class="post-splitter">
 <div id="disqus_thread"></div>

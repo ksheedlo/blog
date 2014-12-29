@@ -46,7 +46,7 @@ a {
 }
 
 body {
-  background-color: $off-white;
+  background-color: $white;
   font-family: $sans-font-family;
   height: 100%;
 }
@@ -56,6 +56,8 @@ body {
   margin-bottom: -100px;
 
   &:after {
+    content: "";
+    display: block;
     height: 100px;
   }
 }
@@ -183,6 +185,30 @@ ul.posts span {
   .social-plugins-post {
     margin: 0;
   }
+}
+
+.SocialPlugins {
+  position: relative;
+  top: 4px;
+  margin-left: 12px;
+}
+
+.SocialPlugins--post {
+  margin: 0;
+}
+
+.SocialPlugins-twitter {
+  margin-left: -30px;
+}
+
+.SocialPlugins-fb {
+  position: relative;
+  margin-left: -25px;
+  top: -8px;
+}
+
+.SocialPlugins-fb--post {
+  top: -3px;
 }
 
 .hidebelow-lg {
