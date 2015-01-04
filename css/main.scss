@@ -11,6 +11,7 @@ $blue: #2893c1;
 $orange: #ff7b3f;
 $off-white: #eee;
 $gray-dark: #333;
+$gray-darker: #222;
 
 /* Webfonts */
 @font-face {
@@ -24,7 +25,8 @@ $gray-dark: #333;
   font-weight: bold;
 }
 
-$sans-font-family: "Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+$sans-font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+$serif-font-family: Georgia,Cambria,"Times New Roman",Times,serif;
 $display-font-family: 'League Spartan',Helvetica,sans-serif;
 $display-font-weight: bold;
 
@@ -37,18 +39,16 @@ html {
 }
 
 a {
-  color: $blue;
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
+  color: $gray-darker;
+  text-decoration: underline;
 }
 
 body {
   background-color: $white;
+  color: $gray-dark;
   font-family: $sans-font-family;
   height: 100%;
+  margin: 0;
 }
 
 .u-pageWrap {
@@ -100,10 +100,12 @@ ul.posts {
 
 ul.posts li {
   line-height: 1.75em;
-}
-
-ul.posts > li {
   margin-bottom: 20px;
+  margin-top: 25px;
+
+  &:first-child {
+    margin-top: 0;
+  }
 }
 
 ul.posts span {
@@ -127,6 +129,11 @@ ul.posts span {
 /*
 /*****************************************************************************/
 
+.Post-header {
+  font-family: $sans-font-family;
+  font-weight: normal;
+  font-size: 28px;
+}
 /* standard */
 .post pre {
   border: 1px solid #ddd;
@@ -240,6 +247,7 @@ ul.posts span {
   height: 62px;
   color: $white;
   display: block;
+  text-decoration: none;
 
   &:hover {
     color: $gray-dark;
@@ -279,7 +287,8 @@ ul.posts span {
 .Site-container {
   @include outer-container(1200px);
 
-  font-family: $sans-font-family;
+  font-family: $serif-font-family;
+  line-height: 1.75em;
 
   @media screen and (max-width: 64em) {
     max-width: 800px;
@@ -378,4 +387,10 @@ ul.posts span {
   shape-outside: circle(50%);
   shape-margin: 1em;
   float: left;
+}
+
+.f-display {
+  font-family: $display-font-family;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }

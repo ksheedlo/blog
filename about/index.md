@@ -3,7 +3,7 @@ layout: default
 title: Ken Sheedlo | About
 ---
 
-## About Me
+<h1 class="f-display">About Me</h1>
 
 ![That's green chile beer.](/assets/beer_profile.jpg)
 
