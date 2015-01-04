@@ -3,6 +3,8 @@ layout: default
 title: Ken Sheedlo | Resume
 ---
 
+<h1 class="f-display">Resume</h1>
+
 <h2 class="Post-header">Work Experience</h2>
 
 #### User Interface Engineer, Rackspace

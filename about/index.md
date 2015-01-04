@@ -3,6 +3,8 @@ layout: default
 title: Ken Sheedlo | About
 ---
 
+<h1 class="f-display">About</h1>
+
 <h2 class="Post-header">About Me</h2>
 
 Oh, snap.
