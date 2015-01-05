@@ -1,10 +1,12 @@
 name: Ken Sheedlo
 markdown: redcarpet
-highlighter: 'pygments'
+highlighter: pygments
 plugins: ./_plugins
 url: http://kensheedlo.com
+permalink: /essays/:title/
 exclude: ['upload_to_cdn.sh']
 gems:
     - octopress-autoprefixer
     - bourbon
     - neat
+    - jekyll-redirect-from

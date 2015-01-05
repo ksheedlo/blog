@@ -3,6 +3,8 @@ layout: post
 title: "Error Message Minification with MinErr"
 date: 2013-08-15 15:00:00
 description: How we improved the Angular developer experience with readable minified error messages.
+redirect_from:
+  - /2013/08/15/error-message-minification-with-minerr.html
 ---
 
 With the release of AngularJS 1.2.0rc1, the Angular team announced our new

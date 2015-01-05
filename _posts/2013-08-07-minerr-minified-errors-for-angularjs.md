@@ -3,6 +3,8 @@ layout: post
 title:  "MinErr: Minified Errors for AngularJS"
 date:   2013-08-07 10:00:00
 description: Slides from a tech talk on the new error system in AngularJS.
+redirect_from:
+  - /2013/08/07/minerr-minified-errors-for-angularjs.html
 ---
 
 I'm posting my slides from a short tech talk I gave today on my summer intern

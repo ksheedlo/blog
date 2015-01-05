@@ -3,6 +3,8 @@ layout: post
 title:  "Why Focus Testing is Awesome"
 date:   2013-07-15 23:51:00
 excerpt: Unit testing is awesome. One of the great benefits of a test-driven workflow is the ability to iterate rapidly, breaking one thing at a time, refactoring and fixing it while knowing the rest of the code still works...
+redirect_from:
+  - /2013/07/15/why-focus-testing-is-awesome.html
 ---
 
 Unit testing is awesome. One of the great benefits of a test-driven workflow is

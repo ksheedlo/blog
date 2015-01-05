@@ -1,9 +1,11 @@
 ---
 layout: post
-title:  "A Git Rebase Workflow for 2013"
+title:  "Why You Should Use a Rebase Workflow"
 date:   2013-07-25 08:00:00
 description: An example git rebase workflow along with an analysis of its benefits and some style pointers.
 meta_image: /assets/ember-merge-workflow.png
+redirect_from:
+  - /2013/07/25/a-git-rebase-workflow-for-2013.html
 ---
 
 Git is a terrifying and powerful instrument. I've been using it for a few years
